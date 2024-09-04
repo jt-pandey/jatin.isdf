@@ -7,6 +7,10 @@
             --accent-color: {{ .Site.Params.AccentColor | default "#FF4D4D" }};
         }
     </style>
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      </script>
+      <script defer src="/_vercel/insights/script.js"></script>
 
     {{ $title := .Title | default .Site.Title }}
     {{ $description := .Description | default .Site.Params.Description }}
